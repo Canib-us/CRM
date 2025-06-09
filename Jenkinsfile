@@ -12,7 +12,7 @@ pipeline {
         stage('Build & Test') {
             steps {
                 echo '🧪 Собираем проект и запускаем тесты'
-                sh './mvnw clean verify'
+                bat './mvnw clean verify' // заменили sh → bat
             }
         }
     }
