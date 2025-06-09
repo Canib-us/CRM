@@ -10,6 +10,7 @@ public class CrmApplication {
 		SpringApplication.run(CrmApplication.class, args);
 		System.out.println("Hello World");
 		System.out.println("kalksmkac");
+		System.out.println("uiacebdc");
 	}
 
 }
