@@ -8,15 +8,6 @@ public class CrmApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(CrmApplication.class, args);
-		System.out.println("Hello World");
-		System.out.println("kalksmkac");
-		System.out.println("uiacebdc");
-		System.out.println("uiacebdc");
-		System.out.println("first for today");
-		System.out.println("second for today");
-		System.out.println("third for today");
-		System.out.println("fourth for today");
-		System.out.println("fifth for today");
 	}
 
 }
