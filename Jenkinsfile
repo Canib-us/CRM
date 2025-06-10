@@ -1,28 +1,31 @@
 pipeline {
     agent any
 
+    tools {
+        jdk 'jdk-21'  // Имя JDK из Global Tool Configuration
+    }
+
     stages {
         stage('Checkout') {
             steps {
-                echo '📦 Клонируем проект'
                 checkout scm
             }
         }
 
         stage('Build & Test') {
             steps {
-                echo '🧪 Сборка и тесты Gradle'
-                bat 'gradlew.bat clean build'  // ✅ для Windows
+                echo '🧪 Сборка и тесты'
+                bat 'gradlew.bat clean build'
             }
         }
     }
 
     post {
         success {
-            echo '✅ Сборка и тесты прошли успешно!'
+            echo '✅ Всё прошло успешно!'
         }
         failure {
-            echo '❌ Ошибка сборки или тестов'
+            echo '❌ Ошибка при сборке'
         }
     }
 }
