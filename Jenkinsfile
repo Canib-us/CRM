@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        jdk 'jdk-17'  // Имя JDK из Global Tool Configuration
+        jdk 'jdk-21'  // Имя JDK из Global Tool Configuration
     }
 
     stages {
