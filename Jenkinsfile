@@ -1,6 +1,9 @@
 pipeline {
     agent any
 
+environment {
+    DOCKER_HOST = 'tcp://localhost:2375'
+}
     tools {
         jdk 'jdk-21'  // Имя JDK из Global Tool Configuration
     }
