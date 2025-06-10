@@ -12,6 +12,7 @@ public class CrmApplication {
 		System.out.println("kalksmkac");
 		System.out.println("uiacebdc");
 		System.out.println("uiacebdc");
+		System.out.println("first for today");
 	}
 
 }
