@@ -22,7 +22,11 @@ configurations {
 repositories {
 	mavenCentral()
 }
-
+test {
+	useJUnitPlatform {
+		excludeTags 'integration'
+	}
+}
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-elasticsearch'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
